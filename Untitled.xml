@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SolutionRoot CoveredStatements="246" TotalStatements="545" CoveragePercent="45" ReportType="Xml" DotCoverVersion="2021.3.3">
+  <SolutionFolder Name="01 - Testes de Unidade" CoveredStatements="246" TotalStatements="545" CoveragePercent="45">
+    <SolutionFolder Name="1.1 - Testes Basicos" CoveredStatements="0" TotalStatements="150" CoveragePercent="0">
+      <Project Name="Demo" CoveredStatements="0" TotalStatements="49" CoveragePercent="0">
+        <Namespace Name="Demo" CoveredStatements="0" TotalStatements="46" CoveragePercent="0">
+          <Type Name="Calculadora" CoveredStatements="0" TotalStatements="6" CoveragePercent="0">
+            <Method Name="Dividir(int,int):int" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+            <Method Name="Somar(double,double):double" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+          </Type>
+          <Type Name="Funcionario" CoveredStatements="0" TotalStatements="33" CoveragePercent="0">
+            <Constructor Name="Funcionario(string,double)" CoveredStatements="0" TotalStatements="6" CoveragePercent="0" />
+            <AutoProperty Name="Habilidades:IList&lt;string&gt;" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+              <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+              <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+            </AutoProperty>
+            <AutoProperty Name="NivelProfissional:NivelProfissional" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+              <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+              <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+            </AutoProperty>
+            <AutoProperty Name="Salario:double" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+              <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+              <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+            </AutoProperty>
+            <Method Name="DefinirHabilidades():void" CoveredStatements="0" TotalStatements="10" CoveragePercent="0" />
+            <Method Name="DefinirSalario(double):void" CoveredStatements="0" TotalStatements="11" CoveragePercent="0" />
+          </Type>
+          <Type Name="Pessoa" CoveredStatements="0" TotalStatements="4" CoveragePercent="0">
+            <AutoProperty Name="Apelido:string" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+              <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+              <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+            </AutoProperty>
+            <AutoProperty Name="Nome:string" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+              <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+              <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+            </AutoProperty>
+          </Type>
+          <Type Name="StringsTools" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+            <Method Name="Unir(string,string):string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+          </Type>
+        </Namespace>
+        <Type Name="FuncionarioFactory" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <Method Name="Criar(string,double):Funcionario" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+        </Type>
+      </Project>
+      <Project Name="Demo.Tests" CoveredStatements="0" TotalStatements="101" CoveragePercent="0">
+        <Namespace Name="Demo.Tests" CoveredStatements="0" TotalStatements="101" CoveragePercent="0">
+          <Type Name="AssertCollectionsTests" CoveredStatements="0" TotalStatements="18" CoveragePercent="0">
+            <Method Name="Funcionario_Habilidades_JuniorDevePossuirHabilidadeBasica():void" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+            <Method Name="Funcionario_Habilidades_JuniorNaoDevePossuirHabilidadeBasica():void" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+            <Method Name="Funcionario_Habilidades_NaoDevePossuirHabilidadesVazias():void" CoveredStatements="0" TotalStatements="5" CoveragePercent="0">
+              <OwnCoverage CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+              <AnonymousMethod Name="(string):void" CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+            </Method>
+            <Method Name="Funcionario_Habilidades_SeniorDevePossuirTodasHabilidade():void" CoveredStatements="0" TotalStatements="5" CoveragePercent="0" />
+          </Type>
+          <Type Name="AssertExceptionTests" CoveredStatements="0" TotalStatements="10" CoveragePercent="0">
+            <Method Name="Calculadora_Dividir_DeveRetornarErroDivisaoPorZero():void" CoveredStatements="0" TotalStatements="5" CoveragePercent="0">
+              <OwnCoverage CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+              <AnonymousMethod Name="():object" CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+            </Method>
+            <Method Name="Funcionario_Salario_DeveRetornarErroSalarioInferiorPermitido():void" CoveredStatements="0" TotalStatements="5" CoveragePercent="0">
+              <OwnCoverage CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+              <AnonymousMethod Name="():object" CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+            </Method>
+          </Type>
+          <Type Name="AssertNullBoolTests" CoveredStatements="0" TotalStatements="10" CoveragePercent="0">
+            <Method Name="Funcionario_Apelido_NaoDeveSerNuloOuVazio():void" CoveredStatements="0" TotalStatements="6" CoveragePercent="0" />
+            <Method Name="Funcionario_Nome_NaoDeveSerNuloOuVazio():void" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+          </Type>
+          <Type Name="AssertNumbersTest" CoveredStatements="0" TotalStatements="10" CoveragePercent="0">
+            <Method Name="Calculadora_Somar_DeveSerIgual():void" CoveredStatements="0" TotalStatements="5" CoveragePercent="0" />
+            <Method Name="Calculadora_Somar_NaoDeveSerIgual():void" CoveredStatements="0" TotalStatements="5" CoveragePercent="0" />
+          </Type>
+          <Type Name="AssertObjectTypesTests" CoveredStatements="0" TotalStatements="8" CoveragePercent="0">
+            <Method Name="FuncionarioFactory_Criar_Deve_RetornarTipoFuncionario():void" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+            <Method Name="funcionarioFactory_Criar_DeveRetornarTipoDerivadoPessoa():void" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+          </Type>
+          <Type Name="AssertRangesTests" CoveredStatements="0" TotalStatements="10" CoveragePercent="0">
+            <Method Name="Funcionario_Salario_FaixasSalarialDevemRespeitarNivelProfissional(double):void" CoveredStatements="0" TotalStatements="10" CoveragePercent="0" />
+          </Type>
+          <Type Name="AssertStringsTests" CoveredStatements="0" TotalStatements="25" CoveragePercent="0">
+            <Method Name="FactMethodName():void" CoveredStatements="0" TotalStatements="5" CoveragePercent="0" />
+            <Method Name="StringsTools_UnirNomes_DeveAcabarCom():void" CoveredStatements="0" TotalStatements="5" CoveragePercent="0" />
+            <Method Name="StringsTools_UnirNomes_DeveIgnorarCase():void" CoveredStatements="0" TotalStatements="5" CoveragePercent="0" />
+            <Method Name="StringsTools_UnirNomes_RetornarNomeCompleto():void" CoveredStatements="0" TotalStatements="5" CoveragePercent="0" />
+            <Method Name="StringsTools_UnirNomes_ValidarExpressaoRegular():void" CoveredStatements="0" TotalStatements="5" CoveragePercent="0" />
+          </Type>
+          <Type Name="CalculadoraTests" CoveredStatements="0" TotalStatements="10" CoveragePercent="0">
+            <Method Name="Calculadora_Somar_RetornarValoresSomaCorretos(double,double,double):void" CoveredStatements="0" TotalStatements="5" CoveragePercent="0" />
+            <Method Name="Calculadora_Somar_RetornarValorSoma():void" CoveredStatements="0" TotalStatements="5" CoveragePercent="0" />
+          </Type>
+        </Namespace>
+      </Project>
+    </SolutionFolder>
+    <SolutionFolder Name="2.2 - Features" CoveredStatements="246" TotalStatements="395" CoveragePercent="62">
+      <Project Name="Features" CoveredStatements="69" TotalStatements="129" CoveragePercent="53">
+        <Namespace Name="Features" CoveredStatements="11" TotalStatements="15" CoveragePercent="73">
+          <Type Name="ClientEmailNotification" CoveredStatements="11" TotalStatements="15" CoveragePercent="73">
+            <Constructor Name="ClientEmailNotification(string,string,string,string)" CoveredStatements="7" TotalStatements="7" CoveragePercent="100" />
+            <AutoProperty Name="Assunto:string" CoveredStatements="1" TotalStatements="2" CoveragePercent="50">
+              <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+              <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            </AutoProperty>
+            <AutoProperty Name="Destino:string" CoveredStatements="1" TotalStatements="2" CoveragePercent="50">
+              <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+              <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            </AutoProperty>
+            <AutoProperty Name="Mensagem:string" CoveredStatements="1" TotalStatements="2" CoveragePercent="50">
+              <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+              <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            </AutoProperty>
+            <AutoProperty Name="Origetem:string" CoveredStatements="1" TotalStatements="2" CoveragePercent="50">
+              <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+              <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            </AutoProperty>
+          </Type>
+        </Namespace>
+        <Namespace Name="Features.Clientes" CoveredStatements="51" TotalStatements="84" CoveragePercent="61">
+          <Type Name="Cliente" CoveredStatements="25" TotalStatements="38" CoveragePercent="66">
+            <Constructor Name="Cliente()" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+            <Constructor Name="Cliente(Guid,string,string,DateTime,string,bool,DateTime)" CoveredStatements="10" TotalStatements="10" CoveragePercent="100" />
+            <AutoProperty Name="Ativo:bool" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+              <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+              <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            </AutoProperty>
+            <AutoProperty Name="DataCadastro:DateTime" CoveredStatements="1" TotalStatements="2" CoveragePercent="50">
+              <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+              <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            </AutoProperty>
+            <AutoProperty Name="DataNascimento:DateTime" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+              <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+              <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            </AutoProperty>
+            <AutoProperty Name="Email:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+              <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+              <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            </AutoProperty>
+            <AutoProperty Name="Nome:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+              <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+              <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            </AutoProperty>
+            <AutoProperty Name="Sobrenome:string" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+              <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+              <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            </AutoProperty>
+            <Method Name="EhEspecial():bool" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+            <Method Name="EhValido():bool" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+            <Method Name="Inativar():void" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+            <Method Name="NomeCompleto():string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+          </Type>
+          <Type Name="ClienteService" CoveredStatements="15" TotalStatements="35" CoveragePercent="43">
+            <Constructor Name="ClienteService(IClienteRepository,IMediator)" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+            <Method Name="Adicionar(Cliente):void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+            <Method Name="Atualizar(Cliente):void" CoveredStatements="0" TotalStatements="6" CoveragePercent="0" />
+            <Method Name="Dispose():void" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+            <Method Name="Inativar(Cliente):void" CoveredStatements="0" TotalStatements="7" CoveragePercent="0" />
+            <Method Name="ObterTodosAtivos():IEnumerable&lt;Cliente&gt;" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+              <OwnCoverage CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+              <AnonymousMethod Name="(Cliente):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            </Method>
+            <Method Name="Remover(Cliente):void" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+          </Type>
+          <Type Name="ClienteValidacao" CoveredStatements="11" TotalStatements="11" CoveragePercent="100">
+            <Constructor Name="ClienteValidacao()" CoveredStatements="8" TotalStatements="8" CoveragePercent="100" />
+            <Method Name="HaveMinimumAge(DateTime):bool" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+          </Type>
+        </Namespace>
+        <Namespace Name="Features.Core" CoveredStatements="7" TotalStatements="30" CoveragePercent="23">
+          <Type Name="Entity" CoveredStatements="7" TotalStatements="30" CoveragePercent="23">
+            <AutoProperty Name="Id:Guid" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+              <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+              <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            </AutoProperty>
+            <AutoProperty Name="ValidationResult:ValidationResult" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+              <PropertyGetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+              <PropertySetter CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            </AutoProperty>
+            <Method Name="EhValido():bool" CoveredStatements="0" TotalStatements="2" CoveragePercent="0" />
+            <Method Name="Equals(object):bool" CoveredStatements="0" TotalStatements="8" CoveragePercent="0" />
+            <Method Name="GetHashCode():int" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+            <Method Name="op_Equality(Entity,Entity):bool" CoveredStatements="0" TotalStatements="7" CoveragePercent="0" />
+            <Method Name="op_Inequality(Entity,Entity):bool" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+            <Method Name="ToString():string" CoveredStatements="0" TotalStatements="3" CoveragePercent="0" />
+          </Type>
+        </Namespace>
+      </Project>
+      <Project Name="Features.Tests" CoveredStatements="177" TotalStatements="266" CoveragePercent="67">
+        <Namespace Name="Features.Tests" CoveredStatements="177" TotalStatements="258" CoveragePercent="69">
+          <Type Name="ClienteBogusFixture" CoveredStatements="28" TotalStatements="28" CoveragePercent="100">
+            <Method Name="CriarClienteInvalido(int,bool):IEnumerable&lt;Cliente&gt;" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+              <OwnCoverage CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+              <AnonymousMethod Name="(Faker):Cliente" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+              <AnonymousMethod Name="(Faker,Cliente):string" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            </Method>
+            <Method Name="CriarClienteValido(int,bool):IEnumerable&lt;Cliente&gt;" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+              <OwnCoverage CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+              <AnonymousMethod Name="(Faker):Cliente" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+              <AnonymousMethod Name="(Faker,Cliente):string" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            </Method>
+            <Method Name="Dispose():void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100" />
+            <Method Name="GerarClienteInvalido():Cliente" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+            <Method Name="GerarClienteValido():Cliente" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+            <Method Name="ObterClientesVariados():List&lt;Cliente&gt;" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+          </Type>
+          <Type Name="ClienteBogusTests" CoveredStatements="10" TotalStatements="16" CoveragePercent="63">
+            <Constructor Name="ClienteBogusTests(ClienteTestsFixture)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+            <Method Name="Cliente_NovoCliente_DeveEstarInvalido():void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+            <Method Name="Cliente_NovoCliente_DeveEstarValido():void" CoveredStatements="0" TotalStatements="6" CoveragePercent="0" />
+          </Type>
+          <Type Name="ClienteFluentAssertionTests" CoveredStatements="10" TotalStatements="16" CoveragePercent="63">
+            <Constructor Name="ClienteFluentAssertionTests(ClienteTestsAutoMockerFixture)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+            <Method Name="Cliente_NovoCliente_DeveEstarInvalido():void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+            <Method Name="Cliente_NovoCliente_DeveEstarValido():void" CoveredStatements="0" TotalStatements="6" CoveragePercent="0" />
+          </Type>
+          <Type Name="ClienteServiceAutomockerFixtureTests" CoveredStatements="12" TotalStatements="27" CoveragePercent="44">
+            <Constructor Name="ClienteServiceAutomockerFixtureTests(ClienteTestsAutoMockerFixture)" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+            <Method Name="ClienteService_Adicionar_DeveExecutarComSucesso():void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100" />
+            <Method Name="ClienteService_Adicionar_DeveFalharDevidoClienteInvalido():void" CoveredStatements="0" TotalStatements="7" CoveragePercent="0" />
+            <Method Name="ClienteService_ObterTodosAtivos_DeveRetornarApenasClientesAtivos():void" CoveredStatements="0" TotalStatements="8" CoveragePercent="0">
+              <OwnCoverage CoveredStatements="0" TotalStatements="7" CoveragePercent="0" />
+              <AnonymousMethod Name="(Cliente):bool" CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+            </Method>
+          </Type>
+          <Type Name="ClienteServiceAutomockerTests" CoveredStatements="23" TotalStatements="32" CoveragePercent="72">
+            <Constructor Name="ClienteServiceAutomockerTests(ClienteBogusFixture)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+            <Method Name="ClienteService_Adicionar_DeveExecutarComSucesso():void" CoveredStatements="9" TotalStatements="9" CoveragePercent="100" />
+            <Method Name="ClienteService_Adicionar_DeveFalharDevidoClienteInvalido():void" CoveredStatements="0" TotalStatements="9" CoveragePercent="0" />
+            <Method Name="ClienteService_ObterTodosAtivos_DeveRetornarApenasClientesAtivos():void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+              <OwnCoverage CoveredStatements="9" TotalStatements="9" CoveragePercent="100" />
+              <AnonymousMethod Name="(Cliente):bool" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            </Method>
+          </Type>
+          <Type Name="ClienteServiceFluentAssertionTests" CoveredStatements="21" TotalStatements="29" CoveragePercent="72">
+            <Constructor Name="ClienteServiceFluentAssertionTests(ClienteTestsAutoMockerFixture,ITestOutputHelper)" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+            <Method Name="ClienteService_Adicionar_DeveExecutarComSucesso():void" CoveredStatements="8" TotalStatements="8" CoveragePercent="100" />
+            <Method Name="ClienteService_Adicionar_DeveFalharDevidoClienteInvalido():void" CoveredStatements="0" TotalStatements="8" CoveragePercent="0" />
+            <Method Name="ClienteService_ObterTodosAtivos_DeveRetornarApenasClientesAtivos():void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100" />
+          </Type>
+          <Type Name="ClienteServiceTests" CoveredStatements="14" TotalStatements="35" CoveragePercent="40">
+            <Constructor Name="ClienteServiceTests(ClienteBogusFixture)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+            <Method Name="ClienteService_Adicionar_DeveExecutarComSucesso():void" CoveredStatements="0" TotalStatements="10" CoveragePercent="0" />
+            <Method Name="ClienteService_Adicionar_DeveFalaharDevidoClienteInvalido():void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100" />
+            <Method Name="ClienteService_ObterTodosAtivos_DeveRetornarApenasClientesAtivos():void" CoveredStatements="0" TotalStatements="11" CoveragePercent="0">
+              <OwnCoverage CoveredStatements="0" TotalStatements="10" CoveragePercent="0" />
+              <AnonymousMethod Name="(Cliente):bool" CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+            </Method>
+          </Type>
+          <Type Name="ClienteTesteInvalido" CoveredStatements="0" TotalStatements="10" CoveragePercent="0">
+            <Constructor Name="ClienteTesteInvalido(ClienteTestsFixture)" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+            <Method Name="Cliente_NovoCliente_NaoDeveEstarValido():void" CoveredStatements="0" TotalStatements="6" CoveragePercent="0" />
+          </Type>
+          <Type Name="ClienteTesteValido" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+            <Constructor Name="ClienteTesteValido(ClienteTestsFixture)" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+            <Method Name="Cliente_NovoCliente_DeveEstarValido():void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+          </Type>
+          <Type Name="ClienteTests" CoveredStatements="6" TotalStatements="12" CoveragePercent="50">
+            <Method Name="Cliente_NovoCliente_DeveEstarValido():void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+            <Method Name="Cliente_NovoCliente_NaoDeveEstarValido():void" CoveredStatements="0" TotalStatements="6" CoveragePercent="0" />
+          </Type>
+          <Type Name="ClienteTestsAutoMockerFixture" CoveredStatements="33" TotalStatements="33" CoveragePercent="100">
+            <Method Name="CriarClienteInvalido(int,bool):IEnumerable&lt;Cliente&gt;" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+              <OwnCoverage CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+              <AnonymousMethod Name="(Faker):Cliente" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+              <AnonymousMethod Name="(Faker,Cliente):string" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            </Method>
+            <Method Name="CriarClienteValido(int,bool):IEnumerable&lt;Cliente&gt;" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+              <OwnCoverage CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+              <AnonymousMethod Name="(Faker):Cliente" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+              <AnonymousMethod Name="(Faker,Cliente):string" CoveredStatements="1" TotalStatements="1" CoveragePercent="100" />
+            </Method>
+            <Method Name="Dispose():void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100" />
+            <Method Name="GerarClienteInvalido():Cliente" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+            <Method Name="GerarClienteValido():Cliente" CoveredStatements="3" TotalStatements="3" CoveragePercent="100" />
+            <Method Name="ObterClienteService():ClienteService" CoveredStatements="5" TotalStatements="5" CoveragePercent="100" />
+            <Method Name="ObterClientesVariados():List&lt;Cliente&gt;" CoveredStatements="6" TotalStatements="6" CoveragePercent="100" />
+          </Type>
+          <Type Name="ClienteTestsFixture" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+            <Method Name="Dispose():void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100" />
+            <Method Name="GerarClienteInvalido():Cliente" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+            <Method Name="GerarClienteValido():Cliente" CoveredStatements="4" TotalStatements="4" CoveragePercent="100" />
+          </Type>
+        </Namespace>
+        <Namespace Name="Features.Tests._08___Skip" CoveredStatements="0" TotalStatements="8" CoveragePercent="0">
+          <Type Name="TesteNaoPassouPorAlgumMotivo" CoveredStatements="0" TotalStatements="8" CoveragePercent="0">
+            <Constructor Name="TesteNaoPassouPorAlgumMotivo(ITestOutputHelper)" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+            <Method Name="SomaService_Calcular_RetornarSoma():void" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+          </Type>
+        </Namespace>
+      </Project>
+    </SolutionFolder>
+  </SolutionFolder>
+</SolutionRoot>

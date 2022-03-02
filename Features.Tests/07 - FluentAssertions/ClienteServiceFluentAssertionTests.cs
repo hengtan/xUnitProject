@@ -5,6 +5,7 @@ using FluentAssertions;
 using MediatR;
 using Moq;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace Features.Tests
 {
@@ -12,13 +13,14 @@ namespace Features.Tests
     public class ClienteServiceFluentAssertionTests
     {
         readonly ClienteTestsAutoMockerFixture _clienteTestesAutoMockerFixture;
-
+        private readonly ITestOutputHelper _outputHelper;
         private readonly ClienteService _clienteService;
 
-        public ClienteServiceFluentAssertionTests(ClienteTestsAutoMockerFixture clienteTestesAutoMockerFixture)
+        public ClienteServiceFluentAssertionTests(ClienteTestsAutoMockerFixture clienteTestesAutoMockerFixture, ITestOutputHelper outputHelper)
         {
             _clienteTestesAutoMockerFixture = clienteTestesAutoMockerFixture;
             _clienteService = _clienteTestesAutoMockerFixture.ObterClienteService();
+            _outputHelper = outputHelper;
         }
 
         [Fact(DisplayName = "Adicionar Cliente com Sucesso")]
@@ -37,6 +39,7 @@ namespace Features.Tests
                 .Verify(r => r.Adicionar(cliente), Times.Once);
             _clienteTestesAutoMockerFixture.Mocker.GetMock<IMediator>()
                 .Verify(m => m.Publish(It.IsAny<INotification>(), CancellationToken.None), Times.Once);
+            _outputHelper.WriteLine($"Deu bom");
         }
 
         [Fact(DisplayName = "Adicionar Cliente com Falha")]
