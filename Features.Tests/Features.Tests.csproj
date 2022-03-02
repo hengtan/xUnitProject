@@ -26,7 +26,7 @@
   <ItemGroup>
     <Folder Include="03 - Order\" />
     <Folder Include="05 - Mock\" />
-    <Folder Include="07 - FluentAssertions\" />
+    <Folder Include="08 - Skip\" />
   </ItemGroup>
 
   <ItemGroup>

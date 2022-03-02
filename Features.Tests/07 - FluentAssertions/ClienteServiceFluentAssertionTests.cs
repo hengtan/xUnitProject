@@ -9,13 +9,13 @@ using Xunit;
 namespace Features.Tests
 {
     [Collection(nameof(ClienteAutoMockerCollection))]
-    public class ClienteServiceFluentAssertionsTests
+    public class ClienteServiceFluentAssertionTests
     {
         readonly ClienteTestsAutoMockerFixture _clienteTestesAutoMockerFixture;
 
         private readonly ClienteService _clienteService;
 
-        public ClienteServiceFluentAssertionsTests(ClienteTestsAutoMockerFixture clienteTestesAutoMockerFixture, ClienteService clienteService)
+        public ClienteServiceFluentAssertionTests(ClienteTestsAutoMockerFixture clienteTestesAutoMockerFixture)
         {
             _clienteTestesAutoMockerFixture = clienteTestesAutoMockerFixture;
             _clienteService = _clienteTestesAutoMockerFixture.ObterClienteService();
@@ -60,7 +60,7 @@ namespace Features.Tests
         }
 
         [Fact(DisplayName = "Obter Cliente Ativos")]
-        [Trait("Categoria", "Cliente Service Fluent Assertion  Tests")]
+        [Trait("Categoria", "Cliente Service Fluent Assertion Tests")]
         public void ClienteService_ObterTodosAtivos_DeveRetornarApenasClientesAtivos()
         {
             // Arrange

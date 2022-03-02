@@ -4,11 +4,11 @@ using Xunit;
 namespace Features.Tests
 {
     [Collection(nameof(ClienteAutoMockerCollection))]
-    public class ClienteFluentAssertionsTests
+    public class ClienteFluentAssertionTests
     {
         private readonly ClienteTestsAutoMockerFixture _clienteTestsFixture;
 
-        public ClienteFluentAssertionsTests(ClienteTestsAutoMockerFixture clienteTestsFixture)
+        public ClienteFluentAssertionTests(ClienteTestsAutoMockerFixture clienteTestsFixture)
         {
             _clienteTestsFixture = clienteTestsFixture;
         }
