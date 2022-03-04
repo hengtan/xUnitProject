@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using NerdStore.Vendas.Domain.Voucher;
 using Xunit;
 
 namespace NerdStore.Vendas.Domain.Tests
@@ -12,7 +13,7 @@ namespace NerdStore.Vendas.Domain.Tests
         {
 
             // Arrange
-            var voucher = new Voucher("PROMO-15-REAIS", null, 15, 1,
+            var voucher = new Voucher.Voucher("PROMO-15-REAIS", null, 15, 1,
                 TipoDescontoVoucher.Valor, DateTime.Now.AddDays(15), true, false);
 
             // Act
@@ -27,7 +28,7 @@ namespace NerdStore.Vendas.Domain.Tests
         public void Voucher_ValidarVoucherTipoValor_DeveEstarInvalido()
         {
             // Arrange
-            var voucher = new Voucher("", null, null, 0,
+            var voucher = new Voucher.Voucher("", null, null, 0,
                 TipoDescontoVoucher.Valor, DateTime.Now.AddDays(-1), false, true);
 
             // Act
@@ -50,7 +51,7 @@ namespace NerdStore.Vendas.Domain.Tests
         {
 
             // Arrange
-            var voucher = new Voucher("PROMO-15-REAIS", 15, null, 1,
+            var voucher = new Voucher.Voucher("PROMO-15-REAIS", 15, null, 1,
                 TipoDescontoVoucher.Porcentagem, DateTime.Now.AddDays(15), true, false);
 
             // Act
@@ -65,7 +66,7 @@ namespace NerdStore.Vendas.Domain.Tests
         public void Voucher_ValidarVoucherTipoPorcentagem_DeveEstarInvalido()
         {
             // Arrange
-            var voucher = new Voucher("", null, null, 0,
+            var voucher = new Voucher.Voucher("", null, null, 0,
                 TipoDescontoVoucher.Porcentagem, DateTime.Now.AddDays(-1), false, true);
 
             // Act

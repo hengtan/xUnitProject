@@ -2,7 +2,7 @@
 using FluentValidation;
 using FluentValidation.Results;
 
-namespace NerdStore.Vendas.Domain
+namespace NerdStore.Vendas.Domain.Voucher
 {
     public class Voucher
     {
@@ -90,11 +90,5 @@ namespace NerdStore.Vendas.Domain
         {
             return dataValidade >= DateTime.Now;
         }
-    }
-
-    public enum TipoDescontoVoucher
-    {
-        Porcentagem = 0,
-        Valor = 1
     }
 }
