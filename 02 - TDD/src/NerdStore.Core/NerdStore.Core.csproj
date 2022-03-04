@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="DomainObject\" />
+    <Folder Include="Messages\" />
   </ItemGroup>
 
   <ItemGroup>
