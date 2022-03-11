@@ -6,7 +6,7 @@ using NerdStore.Core.DomainObject;
 
 namespace NerdStore.Vendas.Domain.Pedido
 {
-    public class Pedido
+    public class Pedido : Entity
     {
         protected Pedido()
         {
